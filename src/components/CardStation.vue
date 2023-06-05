@@ -35,7 +35,7 @@ const handleError = () => {
     <h3>
       <img v-if="showImg" class="img-enseigne" :src="img" :alt="station.enseigne.marque" @error="handleError"/>
       <span v-else>{{station.enseigne.marque}}</span>
-      : {{ station?.enseigne.nom }}
+      : {{ station?.enseigne.nom2.qsd }}
     </h3>
     <div>
       <card-essence v-if="carburant" :prix="carburant"></card-essence>
